@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NEXUSは、0円から始める副業・AI活用・ネット販売の情報を初心者向けに解説するメディアです。">
+<meta name="theme-color" content="#080d16">
+<title>NEXUS｜副業とAIで、収入の選択肢を広げる</title>
+<style>
+:root{--bg:#080d16;--surface:#101827;--surface2:#151f30;--gold:#d8b56d;--gold2:#f1dba8;--text:#f6f3ed;--muted:#a9b2c1;--line:rgba(255,255,255,.11);--green:#8bd5b0;--red:#e5a3a3}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.8}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(8,13,22,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;letter-spacing:.18em;font-weight:900}.logo span{color:var(--gold)}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:13px}.navlinks a:hover,.textlink:hover{color:var(--gold2)}.menu{display:none;border:1px solid var(--line);background:transparent;color:white;padding:7px 11px;border-radius:7px}
+.hero{padding:88px 0 70px;background:radial-gradient(ellipse at 82% 20%,rgba(216,181,109,.17),transparent 36%),linear-gradient(130deg,#0e1727,#080d16 65%);position:relative;overflow:hidden}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.2em;font-weight:800}.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.2;margin:18px 0;letter-spacing:.015em}.hero h1 em{font-style:normal;color:var(--gold2)}.lead{max-width:650px;color:var(--muted);font-size:16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:7px;font-size:14px;font-weight:800;cursor:pointer;border:0}.primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#19140b}.outline{border:1px solid var(--line);color:var(--text)}.hero-note{margin-top:30px;color:#8993a3;font-size:12px}
+.notice{background:#171b22;border-block:1px solid rgba(216,181,109,.24);padding:12px 0;font-size:12px;color:#d6c8a9}.notice strong{color:var(--gold2)}
+section{padding:68px 0}.sectionhead{margin-bottom:28px}.sectionhead h2{font-size:clamp(26px,4vw,36px);line-height:1.35;margin:8px 0}.sectionhead p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,var(--surface2),var(--surface));border:1px solid var(--line);border-radius:13px;padding:23px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:rgba(216,181,109,.45)}.tag{font-size:10px;letter-spacing:.1em;color:var(--gold);border:1px solid rgba(216,181,109,.35);padding:3px 8px;border-radius:20px;display:inline-block}.card h3{font-size:19px;line-height:1.5;margin:12px 0 7px}.card p{font-size:13px;color:var(--muted);margin:0 0 14px}.textlink{color:var(--gold2);font-size:13px;font-weight:800}
+.adslot{border:1px dashed rgba(216,181,109,.42);background:rgba(216,181,109,.045);border-radius:10px;padding:18px;text-align:center;color:var(--muted);font-size:12px;margin:25px 0}.adslot b{display:block;color:var(--gold2);font-size:10px;letter-spacing:.16em;margin-bottom:4px}
+.ranklist{display:grid;gap:12px}.rank{display:grid;grid-template-columns:56px 1fr auto;gap:17px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}.ranknum{font-size:24px;font-weight:900;color:var(--gold);text-align:center}.rank h3{margin:0 0 3px;font-size:17px}.rank p{margin:0;color:var(--muted);font-size:12px}.rank .btn{white-space:nowrap;padding:9px 14px;font-size:12px}.fine{color:var(--muted);font-size:11px;margin-top:14px}
+.article{display:grid;grid-template-columns:1fr 1fr;gap:17px}.article .card{min-height:190px}.article small{color:var(--gold);letter-spacing:.1em}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{border-left:2px solid var(--gold);padding-left:17px}.step b{font-size:11px;color:var(--gold);letter-spacing:.15em}.step h3{margin:7px 0}.step p{color:var(--muted);font-size:13px;margin:0}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:24px;background:var(--surface);border:1px solid var(--line);padding:25px;border-radius:14px}.calc label{display:block;color:var(--muted);font-size:13px;margin:9px 0}.calc input{width:100%;accent-color:var(--gold)}.calc output{font-size:32px;color:var(--gold2);font-weight:900;display:block;margin:9px 0}.small{font-size:11px;color:var(--muted)}
+.formbox{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:25px;max-width:720px}.formbox label{display:block;color:var(--muted);font-size:13px;margin:13px 0 5px}.formbox input,.formbox textarea{width:100%;background:#0b1220;border:1px solid var(--line);border-radius:7px;color:white;padding:11px}.formbox textarea{min-height:130px;resize:vertical}.formbox input:focus,.formbox textarea:focus{outline:1px solid var(--gold)}
+.policy{color:var(--muted);font-size:13px;max-width:900px}.policy h3{color:var(--text);font-size:17px;margin:22px 0 5px}.policy a{color:var(--gold2);text-decoration:underline}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footlinks{display:flex;gap:16px;flex-wrap:wrap}.footlinks a:hover{color:var(--gold2)}
+@media(max-width:780px){.navlinks{display:none;position:absolute;top:70px;left:0;right:0;padding:18px 22px;background:#0d1421;border-bottom:1px solid var(--line);flex-direction:column;gap:13px}.navlinks.open{display:flex}.menu{display:block}.hero{padding:66px 0 55px}.grid,.steps{grid-template-columns:1fr}.article{grid-template-columns:1fr}.rank{grid-template-columns:38px 1fr;gap:10px}.rank .btn{grid-column:2;justify-self:start}.calc{grid-template-columns:1fr}section{padding:54px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">NEXUS<span>.</span></a>
+<nav class="navlinks" id="navlinks"><a href="#guide">副業ガイド</a><a href="#ranking">おすすめサービス</a><a href="#articles">記事</a><a href="#start">始め方</a><a href="#contact">お問い合わせ</a></nav>
+<button class="menu" id="menu" aria-label="メニュー">MENU</button></div></header>
+<main id="top">
+<div class="notice"><div class="wrap">広告について：当サイトにはアフィリエイトリンク・広告枠が含まれる場合があります。<strong>広告であることを明示</strong>し、内容は編集方針に基づいて紹介します。</div></div>
+<section class="hero"><div class="wrap"><div class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</div>
+<h1>収入の選択肢を、<br><em>自分の手で広げよう。</em></h1>
+<p class="lead">NEXUSは、副業・AI活用・ネット販売をこれから始めたい人のための実践メディアです。初期費用を抑えた始め方、サービス選び、続けるコツを初心者向けに解説します。</p>
+<div class="actions"><a class="btn primary" href="#guide">副業の選択肢を見る →</a><a class="btn outline" href="#ranking">サービス比較を見る</a></div>
+<p class="hero-note">誇大な収益保証はしません。費用・手間・リスクも含めて、判断材料を届けます。</p></div></section>
+<section id="guide"><div class="wrap"><div class="sectionhead"><div class="eyebrow">FIND YOUR ROUTE</div><h2>自分に合う副業を見つける。</h2><p>最初からひとつに決めず、使える時間と得意なことから考えましょう。</p></div>
+<div class="grid">
+<article class="card"><span class="tag">SKILL WORK</span><h3>スキルを仕事にする</h3><p>ライティング、デザイン、動画編集、資料作成など。小さな実績を積み上げる働き方です。</p><a class="textlink" href="#article-skill">初心者向けガイドを見る →</a></article>
+<article class="card"><span class="tag">AI & CONTENT</span><h3>AI・コンテンツ発信</h3><p>AIを補助に使って企画・制作を効率化。ブログやSNS、動画で役立つ情報を発信します。</p><a class="textlink" href="#article-ai">初心者向けガイドを見る →</a></article>
+<article class="card"><span class="tag">ONLINE SALES</span><h3>ネット販売</h3><p>不用品やハンドメイドなどを小さく販売。手数料・送料・在庫リスクを事前に確認しましょう。</p><a class="textlink" href="#article-sales">初心者向けガイドを見る →</a></article>
+</div>
+<div class="adslot"><b>ADVERTISEMENT / 広告</b>広告掲載スペース（ASP審査通過後、広告リンクやバナーをここに設置）</div>
+</div></section>
+<section id="ranking" style="background:#0c1320"><div class="wrap"><div class="sectionhead"><div class="eyebrow">SERVICE DIRECTORY</div><h2>副業を始める人向けサービス</h2><p>以下はサービスを探すための候補です。順位は報酬額や広告契約によるランキングではありません。</p></div>
+<div class="ranklist">
+<div class="rank"><div class="ranknum">01</div><div><h3>A8.net</h3><p>幅広いジャンルの広告案件を探せる国内ASP。まず広告主・成果条件・禁止事項を確認。</p></div><a class="btn primary" href="https://www.a8.net/" target="_blank" rel="nofollow sponsored noopener">公式サイト ↗</a></div>
+<div class="rank"><div class="ranknum">02</div><div><h3>もしもアフィリエイト</h3><p>商品紹介などの案件を探す候補。利用条件や提携審査は案件ごとに確認。</p></div><a class="btn outline" href="https://af.moshimo.com/" target="_blank" rel="nofollow sponsored noopener">公式サイト ↗</a></div>
+<div class="rank"><div class="ranknum">03</div><div><h3>バリューコマース</h3><p>ショッピングやサービスなどの広告案件を比較したい人向け。</p></div><a class="btn outline" href="https://www.valuecommerce.ne.jp/" target="_blank" rel="nofollow sponsored noopener">公式サイト ↗</a></div>
+<div class="rank"><div class="ranknum">04</div><div><h3>クラウドワークス</h3><p>仕事を受注してスキルを試したい人向け。手数料・契約条件を確認。</p></div><a class="btn outline" href="https://crowdworks.jp/" target="_blank" rel="nofollow sponsored noopener">公式サイト ↗</a></div>
+<div class="rank"><div class="ranknum">05</div><div><h3>ココナラ</h3><p>自分の得意なことをサービスとして出品したい人向け。</p></div><a class="btn outline" href="https://coconala.com/" target="_blank" rel="nofollow sponsored noopener">公式サイト ↗</a></div>
+</div>
+<p class="fine">※掲載順は編集上の整理であり、サービスの優劣・収益性を保証するものではありません。各公式サイトで最新の料金、審査、利用規約をご確認ください。現在のリンクは公式サイトへの通常リンクで、当サイトの成果報酬は発生しません。提携承認後に専用リンクへ差し替えてください。</p>
+</div></section>
+<section id="articles"><div class="wrap"><div class="sectionhead"><div class="eyebrow">NEXUS JOURNAL</div><h2>はじめての副業ガイド</h2><p>まず知っておきたい基本を、短く実践的にまとめました。</p></div>
+<div class="article">
+<article class="card" id="article-skill"><small>GUIDE 01 / SKILL</small><h3>未経験からスキル副業を始める5ステップ</h3><p>①できることを書き出す ②需要を調べる ③無料教材で基礎を学ぶ ④サンプルを作る ⑤小さな案件に応募する。最初は実績づくりを優先し、作業時間と報酬を記録しましょう。</p><a class="textlink" href="https://crowdworks.jp/" target="_blank" rel="noopener">仕事の募集例を見る ↗</a></article>
+<article class="card" id="article-ai"><small>GUIDE 02 / AI</small><h3>AIを副業に活用するときの注意点</h3><p>AIはアイデア出しや下書きに便利ですが、出力の事実確認・著作権・個人情報・各サービスの利用規約確認が必要です。生成物をそのまま納品せず、人が品質を確認しましょう。</p><a class="textlink" href="https://www.google.com/search?q=生成AI+著作権+ガイドライン" target="_blank" rel="noopener">基礎情報を調べる ↗</a></article>
+<article class="card" id="article-sales"><small>GUIDE 03 / SALES</small><h3>ネット販売で利益を残す計算方法</h3><p>販売価格から仕入れ費、販売手数料、送料、梱包費などを引いた金額が利益の目安です。売れる前に大量仕入れをせず、まずは不用品などで流れを経験しましょう。</p><a class="textlink" href="https://www.google.com/search?q=ネット販売+手数料+送料+利益計算" target="_blank" rel="noopener">費用項目を調べる ↗</a></article>
+<article class="card"><small>GUIDE 04 / SAFETY</small><h3>避けたい副業トラブルのサイン</h3><p>「必ず儲かる」「すぐ元が取れる」と断言する話、高額な初期費用を急がせる勧誘、仕事内容が曖昧な案件には注意。契約前に運営者・費用・解約条件を確認しましょう。</p><a class="textlink" href="https://www.caa.go.jp/" target="_blank" rel="noopener">消費者庁の情報を見る ↗</a></article>
+</div>
+</div></section>
+<section style="background:#0c1320" id="start"><div class="wrap"><div class="sectionhead"><div class="eyebrow">START WITH ZERO</div><h2>0円スタートの基本プラン</h2><p>有料教材や高額ツールを買う前に、無料で検証します。</p></div>
+<div class="steps"><div class="step"><b>WEEK 01</b><h3>テーマをひとつ選ぶ</h3><p>週に使える時間、得意なこと、興味のある分野を整理。初期費用ゼロで試せる方法を選びます。</p></div><div class="step"><b>WEEK 02</b><h3>サンプルを作る</h3><p>記事、デザイン、動画などの見本をひとつ作り、品質を見直します。実績を偽らないことが大切です。</p></div><div class="step"><b>WEEK 03+</b><h3>小さく公開・応募する</h3><p>募集条件や規約を読み、無理のない範囲で応募・発信。収入と経費、作業時間を記録します。</p></div></div>
+</div></section>
+<section id="simulator"><div class="wrap"><div class="sectionhead"><div class="eyebrow">PLAN YOUR TIME</div><h2>目標から必要な作業時間を試算</h2><p>あくまで仮の計算です。実際の案件単価や受注を保証しません。</p></div>
+<div class="calc"><div><label for="goal">月の目標額：<strong id="goalText">50,000円</strong></label><input id="goal" type="range" min="5000" max="200000" step="5000" value="50000"><label for="rate">仮の時給換算：<strong id="rateText">1,500円</strong></label><input id="rate" type="range" min="500" max="5000" step="100" value="1500"></div><div><span class="eyebrow">ESTIMATED HOURS</span><output id="hours">約33.3時間 / 月</output><p class="small">税金・経費・準備・営業・待ち時間は含まない単純計算です。売上と手取りは異なります。</p></div></div>
+</div></section>
+<section id="contact" style="background:#0c1320"><div class="wrap"><div class="sectionhead"><div class="eyebrow">CONTACT</div><h2>お問い合わせ</h2><p>ご質問・掲載内容の修正依頼などはこちらからご連絡ください。</p></div>
+<div class="formbox"><form id="contactForm"><label for="cname">お名前</label><input id="cname" required maxlength="80" placeholder="お名前"><label for="email">メールアドレス</label><input id="email" type="email" required placeholder="you@example.com"><label for="subject">件名</label><input id="subject" required maxlength="120" placeholder="お問い合わせの件名"><label for="message">お問い合わせ内容</label><textarea id="message" required maxlength="3000" placeholder="お問い合わせ内容をご記入ください"></textarea><p class="small">送信ボタンを押すと、お使いのメールアプリが起動します。メールアプリが設定されていない場合は送信できません。</p><button class="btn primary" type="submit">メールアプリで送信する →</button></form></div>
+</div></section>
+<section id="privacy"><div class="wrap"><div class="sectionhead"><div class="eyebrow">POLICY</div><h2>運営・広告・プライバシーについて</h2></div>
+<div class="policy">
+<h3>広告・アフィリエイトについて</h3><p>当サイトはアフィリエイトプログラムに参加する場合があります。記事内のリンクを経由して商品・サービスの申込みが行われると、運営者に報酬が発生することがあります。広告・PRである場合は、読者が認識できる形で表示します。報酬の有無によって評価を不当に変えることはしません。</p>
+<h3>情報の正確性について</h3><p>掲載情報は公開時点での確認を目指していますが、料金・サービス内容・募集状況等は変更される場合があります。契約や申込みの前に必ず各提供事業者の公式情報をご確認ください。当サイトは収益・成果を保証せず、投資・税務・法律等の個別助言を行うものではありません。</p>
+<h3>個人情報について</h3><p>お問い合わせ時に入力された情報は、返信および問い合わせ対応の目的でのみ利用する想定です。このデモ版のお問い合わせフォームは入力内容をサーバーに保存せず、メールアプリを起動します。アクセス解析や広告配信を導入する場合は、利用するサービス・取得情報・Cookie等について実態に合わせて本ポリシーを更新してください。</p>
+<h3>運営者情報</h3><p>サイト名：NEXUS ／ 運営者：運営者情報を公開前に記入してください ／ 連絡先：下記お問い合わせをご利用ください。</p>
+<h3>免責事項</h3><p>当サイトの情報利用によって生じた損害について、法令上認められる範囲で責任を負いかねます。掲載サービスとの契約は利用者ご自身の判断と責任で行ってください。</p>
+</div></div></section>
+</main>
+<footer><div class="wrap"><div class="foot"><a class="logo" href="#top">NEXUS<span>.</span></a><div class="footlinks"><a href="#privacy">運営・プライバシー</a><a href="#contact">お問い合わせ</a><a href="#ranking">サービス一覧</a></div><span>© 2026 NEXUS</span></div><p class="small">本サイトは副業情報を提供するメディアです。収益や成果を保証するものではありません。</p></div></footer>
+<script>
+const nav=document.getElementById('navlinks');document.getElementById('menu').addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const goal=document.getElementById('goal'),rate=document.getElementById('rate');function update(){let g=+goal.value,r=+rate.value;document.getElementById('goalText').textContent=g.toLocaleString('ja-JP')+'円';document.getElementById('rateText').textContent=r.toLocaleString('ja-JP')+'円';document.getElementById('hours').textContent='約'+(g/r).toFixed(1)+'時間 / 月'}goal.addEventListener('input',update);rate.addEventListener('input',update);update();
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id).value;const body='お名前：'+v('cname')+'\nメール：'+v('email')+'\n\n'+v('message');const url='mailto:?subject='+encodeURIComponent('[NEXUSお問い合わせ] '+v('subject'))+'&body='+encodeURIComponent(body);window.location.href=url;});
+</script>
+</body></html>
