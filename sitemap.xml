@@ -2,7 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bakachinx53-max.github.io/my-homepage/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/sidejob-how-to-choose.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/start-sidejob-no-cost.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/a8net-beginner-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/affiliate-article-writing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/keyword-research-beginner.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/ai-content-quality-check.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/crowdwork-first-order.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/online-selling-profit.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/sidejob-scam-checklist.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bakachinx53-max.github.io/my-homepage/articles/affiliate-disclosure-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
