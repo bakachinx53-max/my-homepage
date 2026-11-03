@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bakachinx53-max.github.io/my-homepage/sitemap.xml
